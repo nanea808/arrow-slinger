@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://b4cuwvhcrr8x8"]
+
+[ext_resource type="Script" path="res://scenes/weapon/bow.gd" id="1_fiuqe"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_d74l0"]
+size = Vector2(20, 100)
+
+[node name="Bow" type="Node2D"]
+script = ExtResource("1_fiuqe")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("PlaceholderTexture2D_d74l0")

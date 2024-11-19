@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://b8lix4umvirfe"]
+
+[ext_resource type="Script" path="res://scenes/weapon/arrow.gd" id="1_qxsd8"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_rxxab"]
+size = Vector2(40, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_53mqs"]
+size = Vector2(40, 10)
+
+[node name="Arrow" type="CharacterBody2D"]
+script = ExtResource("1_qxsd8")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("PlaceholderTexture2D_rxxab")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_53mqs")
+disabled = true
